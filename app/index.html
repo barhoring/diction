@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Bookmarker Bar Horing</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="styles-light.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="message"></div>
+
+    <form class="new-link-form">
+      <label class="new-link-form--url--label" for="new-link-url">New Bookmark URL</label>
+      <input class="new-link-form--url" id="new-link-url" placeholder="enter word" required>
+      <input type="submit" class="new-link-form--submit" value="Submit">
+    </form>
+
+    <section class="links"></section>
+
+    <section class="controls">
+      <button class="controls--clear-storage">Clear Storage</button>
+    </section>
+    
+    <template id="link-template">
+      <article class="link">
+        <h3 class="link--title"></h3>
+        <p class="translation"></p>
+        <a href="#" class="link--url">source</a>
+      </article>
+    </template>
+
+    <script>
+      require("./renderer.js");
+    </script>
+  </body>
+</html>
