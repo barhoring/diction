@@ -18,5 +18,5 @@ npm run build
 ```
 start the app:
 ```
-cd diction-win32-x64 and run diction.exe
+cd diction-win32-x64 && ./diction.exe
 ```
